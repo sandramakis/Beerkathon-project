@@ -12,7 +12,7 @@
 
 #### Desktop
 
-![Desktop main view](../BeerTech/images/Home%20-%20Landing%20page%20screen.png)
+![Desktop main view](../images/Home%20-%20Landing%20page%20screen.png)
 #### Links
 
 [Figma link](https://www.figma.com/file/DwyUGrst0EiM7BeCKIVv00/Tech-Titans-Beerkathon?node-id=63-183&t=SJdYRXIJi4s2leJy-0).
