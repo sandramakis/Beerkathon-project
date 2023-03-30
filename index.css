@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@300;700&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.index{
+    background-color: #FAFAFA;
+}
+.navlogo{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+.body_sec{
+    padding-top: 10%;
+}
+.sec-1 h2{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+.sec-1 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.ul-list{
+    font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+}
+.login{
+    background-color: #F6FDFA;
+    margin: 0 20px;
+}
+.signin{
+    background-color: #F6FDFA;
+    margin: 0 20px;
+}
+.btn-field{
+    background-color: #F6FDFA;
+}
+.signimg{
+    margin-top: 18% !important;
+    width: 50%;
+    height: 100% !important;
+}
+.employeedashboard{
+    background-color: #D3D3D3;
+}
+.logo{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #327153 !important;
+}
+.nav-link:hover{
+    background-color: #327153 !important;
+    color: white !important;
+    padding: 10px;
+}
+.bi:hover{
+    color: white !important;
+}
+.sec-log{
+    
+}
