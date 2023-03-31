@@ -5,7 +5,7 @@ from http import HTTPStatus
 from ..models.employees import Employee
 from flask_jwt_extended import get_jwt, jwt_required, get_jwt_identity, create_access_token, create_refresh_token, unset_jwt_cookies, JWTManager
 from datetime import timedelta
-from ..utils import admin_required
+from ..utils.decorators import admin_required
 
 
 auth_ns = Namespace('auth', description='Authentication related operations')

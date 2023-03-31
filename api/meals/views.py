@@ -5,7 +5,7 @@ from ..models.meals import Meal
 from ..models.employees import Employee
 from http import HTTPStatus
 from flask_jwt_extended import jwt_required
-from ..utils import admin_required
+from ..utils.decorators import admin_required
 
 
 meal_ns = Namespace('meals', description='Meal related operations')
