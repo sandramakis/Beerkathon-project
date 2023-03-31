@@ -1,6 +1,6 @@
 from flask import request
 from flask_restx import Namespace, Resource, fields
-from datetime import datetime
+from datetime import date
 from ..models.meals import Meal
 from ..models.employees import Employee
 from http import HTTPStatus
@@ -18,6 +18,13 @@ add_meal_model = meal_ns.model(
     }
 )
 
+# get_meal_model = meal_ns.model(
+#     'Meal', {
+#         'id': fields.Integer(),
+#         'name': fields.String(required=True, description="A meal name"),
+#         'employee_id': fields.Integer(required=True, description="An employee id"),
+#     }
+
 meal_model = meal_ns.model(
     'Meal', {
         'id': fields.Integer(),
@@ -30,7 +37,8 @@ meal_model = meal_ns.model(
 
 @meal_ns.route('/meal')
 class AssignMeal(Resource):
-    @meal_ns.expect(meal_model)
+    @meal_ns.expect(add_meal_model)
+    @meal_ns.marshal_with(meal_model)
     @meal_ns.doc(description='Admin creates a meal for an employee')
     @admin_required()
     def post(self):
@@ -44,19 +52,17 @@ class AssignMeal(Resource):
         meal = Meal(
             name = data.get('name'),
             employee_id = data.get('employee_id'),
-            date = datetime.date.today()
+            date = date.today()
         )
 
         meal.save()
 
-        employee_meal = {}
-        employee_meal['name'] = meal.name
-        employee_meal['date'] = meal.date
-        employee_meal['employee_id'] = meal.employee_id
+        # employee_meal = {}
+        # employee_meal['name'] = meal.name
+        # employee_meal['date'] = meal.date
+        # employee_meal['employee_id'] = meal.employee_id
 
-        return {
-            'meal': employee_meal
-        }, HTTPStatus.CREATED
+        return meal, HTTPStatus.CREATED
 
 
     @meal_ns.marshal_list_with(meal_model)
@@ -68,9 +74,7 @@ class AssignMeal(Resource):
         """
         meals = Meal.get_all()
 
-        return {
-            'meals': meals
-        }, HTTPStatus.OK
+        return meals, HTTPStatus.OK
         
 # to check if the employee has already used his meal
 @meal_ns.route('/meal/<int:employee_id>')
@@ -95,5 +99,5 @@ class CheckMeal(Resource):
 
         employee.update()
 
-        return {'meal': meal}, HTTPStatus.OK
+        return {'message': 'Meal taken successfully'}, HTTPStatus.OK
 

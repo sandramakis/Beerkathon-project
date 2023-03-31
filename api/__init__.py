@@ -22,7 +22,21 @@ def create_app(config=config_dict['dev']):
 
     jwt = JWTManager(app)
 
-    api = Api(app)
+    authorizations = {
+        'Bearer Auth': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization',
+            "description": "Add a JWT token to the header with ** Bearer &lt;JWT token&gt; to authorize **"
+        }
+    }
+
+    api = Api(app,
+              title="Meal Management System",
+              description="A simple meal management system",
+              authorizations=authorizations,
+              security="Bearer Auth"
+            )
 
     api.add_namespace(auth_ns, path='/auth')
     api.add_namespace(meal_ns, path='/meals')

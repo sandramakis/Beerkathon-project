@@ -8,7 +8,7 @@ class Employee(db.Model):
     email = db.Column(db.String(50), nullable=False, unique=True)
     password_hash = db.Column(db.Text, nullable=False)
     meal_used = db.Column(db.Integer, default=0)
-    meal = db.relationship("Meal", backref="employee", lazy=True)
+    # meal = db.relationship("Meal", backref="employee", lazy=True)
 
     user_type = db.Column(db.String(20))
 
@@ -27,6 +27,9 @@ class Employee(db.Model):
 
     def delete(self):
         db.session.delete(self)
+        db.session.commit()
+
+    def update(self):
         db.session.commit()
 
     @classmethod

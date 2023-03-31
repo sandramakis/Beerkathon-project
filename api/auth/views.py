@@ -2,7 +2,7 @@ from flask import request
 from flask_restx import Namespace, Resource, fields
 from werkzeug.security import generate_password_hash, check_password_hash
 from http import HTTPStatus
-from ..models.employees import Employee
+from ..models.employees import Employee, Admin
 from flask_jwt_extended import get_jwt, jwt_required, get_jwt_identity, create_access_token, create_refresh_token, unset_jwt_cookies, JWTManager
 from datetime import timedelta
 from ..utils.decorators import admin_required
@@ -52,7 +52,7 @@ class AdminSignUp(Resource):
         if user:
             return {'message': 'User already exists'}, HTTPStatus.BAD_REQUEST
 
-        admin = Employee(
+        admin = Admin(
             username = data.get('username'),
             email = data.get('email'),
             password_hash = generate_password_hash(data.get('password')),
@@ -167,7 +167,7 @@ class AdminAddEmployee(Resource):
             username = data.get('username'),
             email = data.get('email'),
             password_hash=generate_password_hash(data.get('password')),
-            is_admin=False
+            
         )
 
         new_employee.save()
