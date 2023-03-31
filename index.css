@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@300;700&family=Roboto:wght@300&display=swap');
+/* TABLE OF CONTENT 
+1. HOME
+2. EMPLOYEE DASHBOARD
+3. PROFILE PAGE
 
+*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* HOME STYLES */
 
 .index{
     background-color: #FAFAFA;
@@ -63,7 +70,7 @@
     height: 100% !important;
 }
 
-/* EMPLPOYEE DASHBOARD  */
+/* EMPLOPOYEE DASHBOARD  */
 
 .employeedashboard{
     background-color: #D3D3D3;
