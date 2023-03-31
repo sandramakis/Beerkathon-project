@@ -49,7 +49,7 @@
     height: 100% !important;
 }
 .employeedashboard{
-    background-color: #D3D3D3;
+    background-color: #F6FDFA;
 }
 .logo{
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -65,6 +65,17 @@
 .bi:hover{
     color: white !important;
 }
-.sec-log{
+.sidebar{
+    height: 80vh;
+}
+.header h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+.available h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
     
 }
