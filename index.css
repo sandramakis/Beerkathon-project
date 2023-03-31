@@ -9,73 +9,112 @@
 .index{
     background-color: #FAFAFA;
 }
+
+.navbar-collapse{
+    width: 90vw;
+    padding: 0 10px;
+}
+
 .navlogo{
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
     font-size: 32px;
 }
+
 .body_sec{
     padding-top: 10%;
 }
+
 .sec-1 h2{
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
     font-size: 60px;
 }
+
 .sec-1 p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
 }
+
 .ul-list{
     font-family: 'Inter', sans-serif;
         font-weight: 500;
         font-size: 18px;
 }
+
 .login{
     background-color: #F6FDFA;
     margin: 0 20px;
 }
+
 .signin{
     background-color: #F6FDFA;
     margin: 0 20px;
 }
+
 .btn-field{
     background-color: #F6FDFA;
 }
+
 .signimg{
     margin-top: 18% !important;
     width: 50%;
     height: 100% !important;
 }
+
+/* EMPLPOYEE DASHBOARD  */
+
 .employeedashboard{
     background-color: #F6FDFA;
 }
+
+.employeedashboard > .sidebar-sticky{
+    font-size: smaller;
+}
+
 .logo{
     font-family: 'Atkinson Hyperlegible', sans-serif;
-        font-weight: 700;
-        font-size: 32px;
-        color: #327153 !important;
+    font-weight: 700;
+    font-size: 32px;
+    color: #327153 !important;
 }
+
 .nav-link:hover{
     background-color: #327153 !important;
-    color: white !important;
     padding: 10px;
 }
+
+.nav-link:hover,
 .bi:hover{
     color: white !important;
 }
-.sidebar{
-    height: 80vh;
+
+/* PROFILE PAGE */
+.profile main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-.header h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 25px;
+
+.profile .container-fluid{
+    width: 25vw;
 }
-.available h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 25px;
-    
+
+.profile-section{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #ddefe7; */
+    background-color: #F6FDFA;
+    padding: 20px;
+}
+
+.profile form{
+    background-color: #fff !important;
+    padding: 20px;
+    line-height: 50px;
+    position: relative;
+    top: 10%;
+    height: 30vw;
+    font-size: 15px;
 }
