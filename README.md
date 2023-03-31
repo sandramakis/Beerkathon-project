@@ -1,6 +1,6 @@
 # MiTech
 
-live link: (https://ammy198488.github.io/Beerkathon-project/landing/index.html)
+live link: https://ammy198488.github.io/Beerkathon-project/landing/index.html
 ## Description
 - MiTech is a web application that helps in monitoring and enforcing policies to control costs and ensure fair treatment of all employees.
 
