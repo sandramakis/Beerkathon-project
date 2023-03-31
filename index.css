@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@300;700&family=Roboto:wght@300&display=swap');
 /* TABLE OF CONTENT 
 1. HOME
@@ -124,4 +125,125 @@
     top: 10%;
     height: 30vw;
     font-size: 15px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@300;700&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.index{
+    background-color: #FAFAFA;
+}
+
+.navbar-collapse{
+    width: 90vw;
+    padding: 0 10px;
+}
+
+.navlogo{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.body_sec{
+    padding-top: 10%;
+}
+
+.sec-1 h2{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.sec-1 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.ul-list{
+    font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+}
+
+.login{
+    background-color: #F6FDFA;
+    margin: 0 20px;
+}
+
+.signin{
+    background-color: #F6FDFA;
+    margin: 0 20px;
+}
+
+.btn-field{
+    background-color: #F6FDFA;
+}
+
+.signimg{
+    margin-top: 18% !important;
+    width: 50%;
+    height: 100% !important;
+}
+
+/* EMPLPOYEE DASHBOARD  */
+
+.employeedashboard{
+    background-color: #F6FDFA;
+}
+
+.employeedashboard > .sidebar-sticky{
+    font-size: smaller;
+}
+
+.logo{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #327153 !important;
+}
+
+.nav-link:hover{
+    background-color: #327153 !important;
+    padding: 10px;
+}
+
+.nav-link:hover,
+.bi:hover{
+    color: white !important;
+}
+
+/* PROFILE PAGE */
+.profile main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile .container-fluid{
+    width: 25vw;
+}
+
+.profile-section{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #ddefe7; */
+    background-color: #F6FDFA;
+    padding: 20px;
+}
+
+.profile form{
+    background-color: #fff !important;
+    padding: 20px;
+    line-height: 50px;
+    position: relative;
+    top: 10%;
+    height: 30vw;
+    font-size: 15px;
+>>>>>>> d9d1add80d8c773da17bbed279d89f82444a3df1
 }
